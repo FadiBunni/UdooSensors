@@ -3,7 +3,7 @@ let barometer = require('neo-barometer');
 // 1. Just temperature
 let temperature = new barometer.Temperature();
 temperature.on('data', function(){
-    console.log('Heey');
+    console.log(temperature);
 });
 //temperature.on('error', console.error.bind(console));
 
