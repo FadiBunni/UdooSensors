@@ -10,14 +10,14 @@ temperature.on('data', function(data){
 // 2. Just pressure
 let pressure = new barometer.Pressure();
 pressure.on('data', function(data){
-    console.log('tryk: ' + data + 'Pascal')
+    console.log('tryk: ' + data + 'Pascal');
 });
 //pressure.on('error', console.error.bind(console));
 
 // 3. Just altitude
 let altitude = new barometer.Altitude();
 altitude.on('data', function(data){
-    console.log('højde' + data)
+    console.log('højde' + data + 'meter');
 });
 //altitude.on('error', console.error.bind(console));
 
