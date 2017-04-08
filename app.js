@@ -13,7 +13,7 @@ setInterval(function(){
 // 1. Just temperature
 let temperature = new barometer.Temperature();
 temperature.on('data', function(data){
-    temperature = data-273;
+    temperatureData = data-273;
 });
 //temperature.on('error', console.error.bind(console));
 
@@ -27,7 +27,7 @@ pressure.on('data', function(data){
 // 3. Just altitude
 let altitude = new barometer.Altitude();
 altitude.on('data', function(data){
-    altitude = data;
+    altitudeData = data;
 });
 //altitude.on('error', console.error.bind(console));
 
